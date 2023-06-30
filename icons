@@ -1,0 +1,22 @@
+// Assuming the 'icons' file is a JavaScript file
+
+// Load Function
+function loadIcon(iconPath) {
+  let img = new Image();
+  img.src = iconPath;
+  img.onload = function() {
+    console.log('Icon loaded successfully');
+  };
+  img.onerror = function() {
+    console.error(`Could not load icon '${iconPath}'`);
+  };
+}
+
+// Image Path
+let iconPath = 'images/icon16.png';
+
+// Icon Identifier
+let iconIdentifier = 'icon16';
+
+// Load the icon
+loadIcon(iconPath);
