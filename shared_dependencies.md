@@ -1,13 +1,25 @@
-Based on the user's prompt, the shared dependencies between the files "images/icon16.png" and "icons" could be:
+Shared Dependencies:
 
-1. Image Path: The path to the image file 'images/icon16.png' is a shared dependency as it is specified in the 'icons' file.
+1. **Exported Variables**: 
+    - `comments`: An array to store the comments for each website.
+    - `currentURL`: A string to store the current URL of the website the user is on.
 
-2. Image File: The image file 'icon16.png' itself is a shared dependency as it is being used in the 'icons' file.
+2. **Data Schemas**: 
+    - `CommentSchema`: A schema for the comments which includes fields like `id`, `url`, `comment`, `timestamp`.
 
-3. Icon Identifier: There might be an identifier for the icon 'icon16.png' in the 'icons' file which is a shared dependency.
+3. **DOM Element IDs**: 
+    - `commentBox`: The text area where the user types their comment.
+    - `submitBtn`: The button to submit the comment.
+    - `commentsContainer`: The container where the comments are displayed.
+    - `summaryBtn`: The button to request a summary of key takeaways.
 
-4. Load Function: There could be a function in the 'icons' file that loads the image 'icon16.png'. The name of this function is a shared dependency.
+4. **Message Names**: 
+    - `getComments`: A message to get the comments for the current website.
+    - `saveComment`: A message to save a new comment.
+    - `getSummary`: A message to get the summary of key takeaways.
 
-5. Error Message: The error message "Could not load icon 'images/icon16.png'" is a shared dependency as it is likely defined in the 'icons' file and triggered when the image fails to load.
-
-Please note that without more specific information about the structure and content of the 'icons' file, it's difficult to provide a more detailed list of shared dependencies.
+5. **Function Names**: 
+    - `fetchComments()`: A function to fetch comments from the storage.
+    - `saveComment()`: A function to save a new comment to the storage.
+    - `displayComments()`: A function to display the comments on the popup.
+    - `getSummary()`: A function to fetch the summary of key takeaways.
